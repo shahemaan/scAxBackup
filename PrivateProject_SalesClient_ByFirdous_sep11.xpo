@@ -1,0 +1,1398 @@
+﻿Exportfile for AOT version 1.0 or later
+Formatversion: 1
+
+***Element: CLS
+
+; Microsoft Dynamics AX Class: UserDataContract unloaded
+; --------------------------------------------------------------------------------
+  CLSVERSION 1
+  
+  CLASS #UserDataContract
+    PROPERTIES
+      Name                #UserDataContract
+      Origin              #{6207DB2E-517E-477E-8B1B-D9D297528494}
+    ENDPROPERTIES
+    
+    METHODS
+      SOURCE #parmPassword
+        #[ DataMemberAttribute('Password')]
+        #public Password parmPassword(Password password = _password)
+        #{
+        #    _password = password;
+        #    return _password;
+        #}
+      ENDSOURCE
+      SOURCE #parmEmployeeName
+        #[ DataMemberAttribute('EmployeeName')]
+        #public HcmWorkerName parmEmployeeName(HcmWorkerName employeeName = _employeeName)
+        #{
+        #    _employeeName = employeeName;
+        #    return _employeeName;
+        #}
+      ENDSOURCE
+      SOURCE #parmEmployeeId
+        #[ DataMemberAttribute('EmployeeId')]
+        #public HcmWorkerRecId parmEmployeeId(HcmWorkerRecId employeeId = _employeeId)
+        #{
+        #    _employeeId = employeeId;
+        #    return _employeeId;
+        #}
+      ENDSOURCE
+      SOURCE #parmUserId
+        #[ DataMemberAttribute('UserId')]
+        #public CnUserId parmUserId(CnUserId userId = _userId)
+        #{
+        #    _userId = userId;
+        #    return _userId;
+        #}
+      ENDSOURCE
+      SOURCE #parmIsActive
+        #[ DataMemberAttribute('isActive')]
+        #public Active parmIsActive(Active isActive = _isActive)
+        #{
+        #    _isActive = isActive;
+        #    return _isActive;
+        #}
+      ENDSOURCE
+      SOURCE #parmRecId
+        #[ DataMemberAttribute('RecId')]
+        #public RecId parmRecId(RecId recId = _recId)
+        #{
+        #    _recId = recId;
+        #    return _recId;
+        #}
+      ENDSOURCE
+      SOURCE #parmModifiedDateTime
+        #[ DataMemberAttribute('ModifiedDateTime')]
+        #public ModifiedDateTime parmModifiedDateTime(ModifiedDateTime modifiedDateTime = _modifiedDateTime)
+        #{
+        #    _modifiedDateTime = modifiedDateTime;
+        #    return _modifiedDateTime;
+        #}
+      ENDSOURCE
+      SOURCE #parmModifiedBy
+        #[ DataMemberAttribute('ModifiedBy')]
+        #public ModifiedBy parmModifiedBy(ModifiedBy modifiedBy = _modifiedBy)
+        #{
+        #    _modifiedBy = modifiedBy;
+        #    return _modifiedBy;
+        #}
+      ENDSOURCE
+      SOURCE #parmDataAreaId
+        #[ DataMemberAttribute('DataAreaId')]
+        #public DataAreaId parmDataAreaId(DataAreaId dataAreaId = _dataAreaId)
+        #{
+        #    _dataAreaId = dataAreaId;
+        #    return _dataAreaId;
+        #}
+      ENDSOURCE
+      SOURCE #parmCreatedDateTime
+        #[ DataMemberAttribute('CreatedDateTime')]
+        #public CreatedDateTime parmCreatedDateTime(CreatedDateTime createdDateTime = _createdDateTime)
+        #{
+        #    _createdDateTime = CreatedDateTime;
+        #    return _createdDateTime;
+        #}
+      ENDSOURCE
+      SOURCE #parmCreatedBy
+        #[ DataMemberAttribute('CreatedBy')]
+        #public CreatedBy parmCreatedBy(CreatedBy createdBy = _createdBy)
+        #{
+        #    _createdBy = createdBy;
+        #    return _createdBy;
+        #}
+      ENDSOURCE
+      SOURCE #classDeclaration
+        #[DataContractAttribute]
+        #public class UserDataContract
+        #{
+        #    Active              _isActive;
+        #    CnUserId            _userId;
+        #    HcmWorkerRecId      _employeeId;
+        #    HcmWorkerName       _employeeName;
+        #    Password            _password;
+        #
+        #    DataAreaId          _dataAreaId;
+        #    RecId               _recId;
+        #    CreatedBy           _createdBy;
+        #    CreatedDateTime     _createdDateTime;
+        #    ModifiedBy          _modifiedBy;
+        #    ModifiedDateTime    _modifiedDateTime;
+        #}
+      ENDSOURCE
+    ENDMETHODS
+  ENDCLASS
+
+***Element: CLS
+
+; Microsoft Dynamics AX Class: CompanyInfoDataContract unloaded
+; --------------------------------------------------------------------------------
+  CLSVERSION 1
+  
+  CLASS #CompanyInfoDataContract
+    PROPERTIES
+      Name                #CompanyInfoDataContract
+      Origin              #{60DB53BC-F7BD-4C64-A14A-789A7FEC8B82}
+    ENDPROPERTIES
+    
+    METHODS
+      SOURCE #classDeclaration
+        #[DataContractAttribute]
+        #public class CompanyInfoDataContract
+        #{
+        #    SelectableDataArea  _dataArea;
+        #    Name                _name;
+        #    NameAlias           _nameAlias;
+        #
+        #    DataAreaId          _dataAreaId;
+        #    RecId               _recId;
+        #    CreatedBy           _createdBy;
+        #    CreatedDateTime     _createdDateTime;
+        #    ModifiedBy          _modifiedBy;
+        #    ModifiedDateTime    _modifiedDateTime;
+        #}
+      ENDSOURCE
+      SOURCE #parmCreatedBy
+        #[ DataMemberAttribute('CreatedBy')]
+        #public CreatedBy parmCreatedBy(CreatedBy createdBy = _createdBy)
+        #{
+        #    _createdBy = createdBy;
+        #    return _createdBy;
+        #}
+      ENDSOURCE
+      SOURCE #parmCreatedDateTime
+        #[ DataMemberAttribute('CreatedDateTime')]
+        #public CreatedDateTime parmCreatedDateTime(CreatedDateTime createdDateTime = _createdDateTime)
+        #{
+        #    _createdDateTime = CreatedDateTime;
+        #    return _createdDateTime;
+        #}
+      ENDSOURCE
+      SOURCE #parmDataArea
+        #[ DataMemberAttribute('DataArea')]
+        #public SelectableDataArea parmDataArea(SelectableDataArea dataArea = _dataArea)
+        #{
+        #    _dataArea = dataArea;
+        #    return _dataArea;
+        #}
+      ENDSOURCE
+      SOURCE #parmDataAreaId
+        #[ DataMemberAttribute('DataAreaId')]
+        #public DataAreaId parmDataAreaId(DataAreaId dataAreaId = _dataAreaId)
+        #{
+        #    _dataAreaId = dataAreaId;
+        #    return _dataAreaId;
+        #}
+      ENDSOURCE
+      SOURCE #parmModifiedBy
+        #[ DataMemberAttribute('ModifiedBy')]
+        #public ModifiedBy parmModifiedBy(ModifiedBy modifiedBy = _modifiedBy)
+        #{
+        #    _modifiedBy = modifiedBy;
+        #    return _modifiedBy;
+        #}
+      ENDSOURCE
+      SOURCE #parmModifiedDateTime
+        #[ DataMemberAttribute('ModifiedDateTime')]
+        #public ModifiedDateTime parmModifiedDateTime(ModifiedDateTime modifiedDateTime = _modifiedDateTime)
+        #{
+        #    _modifiedDateTime = modifiedDateTime;
+        #    return _modifiedDateTime;
+        #}
+      ENDSOURCE
+      SOURCE #parmName
+        #[ DataMemberAttribute('Name')]
+        #public Name parmName(Name name = _name)
+        #{
+        #    _name = name;
+        #    return _name;
+        #}
+      ENDSOURCE
+      SOURCE #parmNameAlias
+        #[ DataMemberAttribute('NameAlias')]
+        #public NameAlias parmNameAlias(NameAlias nameAlias = _nameAlias)
+        #{
+        #    _nameAlias = nameAlias;
+        #    return _nameAlias;
+        #}
+      ENDSOURCE
+      SOURCE #parmRecId
+        #[ DataMemberAttribute('RecId')]
+        #public RecId parmRecId(RecId recId = _recId)
+        #{
+        #    _recId = recId;
+        #    return _recId;
+        #}
+      ENDSOURCE
+    ENDMETHODS
+  ENDCLASS
+
+***Element: CLS
+
+; Microsoft Dynamics AX Class: VendDataContract unloaded
+; --------------------------------------------------------------------------------
+  CLSVERSION 1
+  
+  CLASS #VendDataContract
+    PROPERTIES
+      Name                #VendDataContract
+      Origin              #{0623827C-0B14-4811-B579-69BF8088622D}
+    ENDPROPERTIES
+    
+    METHODS
+      SOURCE #parmBusinessType
+        #[ DataMemberAttribute('BusinessType')]
+        #public BusinessType parmBusinessType(BusinessType businessType = _businessType)
+        #{
+        #    _businessType = businessType;
+        #    return _businessType;
+        #}
+      ENDSOURCE
+      SOURCE #parmContactPersonName
+        #[ DataMemberAttribute('ContactPersonName')]
+        #public ContactPersonName parmContactPersonName(ContactPersonName contactPersonName = _contactPersonName)
+        #{
+        #    _contactPersonName = contactPersonName;
+        #    return _contactPersonName;
+        #}
+      ENDSOURCE
+      SOURCE #parmEmail
+        #[ DataMemberAttribute('Email')]
+        #public Email parmEmail(Email email = _email)
+        #{
+        #    _email = email;
+        #    return _email;
+        #}
+      ENDSOURCE
+      SOURCE #parmPhoneLocal
+        #[ DataMemberAttribute('PhoneLocal')]
+        #public PhoneLocal parmPhoneLocal(PhoneLocal phoneLocal = _phoneLocal)
+        #{
+        #    _phoneLocal = phoneLocal;
+        #    return _phoneLocal;
+        #}
+      ENDSOURCE
+      SOURCE #parmPhone
+        #[ DataMemberAttribute('Phone')]
+        #public Phone parmPhone(Phone phone = _phone)
+        #{
+        #    _phone = phone;
+        #    return _phone;
+        #}
+      ENDSOURCE
+      SOURCE #parmCountry
+        #[ DataMemberAttribute('Country')]
+        #public LogisticsAddressCountryRegionShortName parmCountry(LogisticsAddressCountryRegionShortName country = _country)
+        #{
+        #    _country = country;
+        #    return _country;
+        #}
+      ENDSOURCE
+      SOURCE #parmCounty
+        #[ DataMemberAttribute('County')]
+        #public LogisticsAddressCountyName parmCounty(LogisticsAddressCountyName county = _county)
+        #{
+        #    _county = county;
+        #    return _county;
+        #}
+      ENDSOURCE
+      SOURCE #parmState
+        #[ DataMemberAttribute('State')]
+        #public LogisticsAddressStatename parmState(LogisticsAddressStatename state = _state)
+        #{
+        #    _state = state;
+        #    return _state;
+        #}
+      ENDSOURCE
+      SOURCE #parmCity
+        #[ DataMemberAttribute('City')]
+        #public LogisticsAddressCityName parmCity(LogisticsAddressCityName city = _city)
+        #{
+        #    _city = city;
+        #    return _city;
+        #}
+      ENDSOURCE
+      SOURCE #parmStreetNumber
+        #[ DataMemberAttribute('StreetNumber')]
+        #public LogisticsAddressStreetNumber parmStreetNumber(LogisticsAddressStreetNumber streetNumber = _streetNumber)
+        #{
+        #    _streetNumber = streetNumber;
+        #    return _streetNumber;
+        #}
+      ENDSOURCE
+      SOURCE #parmStreet
+        #[ DataMemberAttribute('StreetName')]
+        #public LogisticsAddressStreet parmStreet(LogisticsAddressStreet street = _street)
+        #{
+        #    _street = street;
+        #    return _street;
+        #}
+      ENDSOURCE
+      SOURCE #parmVendName
+        #[ DataMemberAttribute('VendName')]
+        #public VendName parmVendName(VendName vendName = _vendName)
+        #{
+        #    _vendName = vendName;
+        #    return _vendName;
+        #}
+      ENDSOURCE
+      SOURCE #classDeclaration
+        #[DataContractAttribute]
+        #public class VendDataContract
+        #{
+        #    AccountNum      _accountNum;
+        #    BankAccount     _bankAccount;
+        #    AddressCity     _birthPlace;
+        #
+        #    VendName                                _vendName;
+        #    LogisticsAddressStreet                  _street;
+        #    LogisticsAddressStreetNumber            _streetNumber;
+        #    LogisticsAddressCity                    _city;
+        #    LogisticsAddressStatename               _state;
+        #    LogisticsAddressCountyName              _county;
+        #    //postaladdress
+        #    LogisticsAddressCountryRegionShortName  _country;
+        #    Phone                                   _phone;
+        #    PhoneLocal                              _phoneLocal;
+        #    Email                                   _email;
+        #    ContactPersonName                       _contactPersonName;
+        #    BusinessType                            _businessType;
+        #
+        #    DataAreaId          _dataAreaId;
+        #    RecId               _recId;
+        #    CreatedBy           _createdBy;
+        #    CreatedDateTime     _createdDateTime;
+        #    ModifiedBy          _modifiedBy;
+        #    ModifiedDateTime    _modifiedDateTime;
+        #}
+      ENDSOURCE
+      SOURCE #parmAccountNum
+        #[ DataMemberAttribute('AccountNum')]
+        #public AccountNum parmAccountNum(AccountNum accountNum = _accountNum)
+        #{
+        #    _accountNum = accountNum;
+        #    return _accountNum;
+        #}
+      ENDSOURCE
+      SOURCE #parmBankAccount
+        #[ DataMemberAttribute('BankAccount')]
+        #public BankAccount parmBankAccount(BankAccount bankAccount = _bankAccount)
+        #{
+        #    _bankAccount = bankAccount;
+        #    return _bankAccount;
+        #}
+      ENDSOURCE
+      SOURCE #parmBirthPlace
+        #[ DataMemberAttribute('BirthPlace')]
+        #public AddressCity parmBirthPlace(AddressCity birthPlace = _birthPlace)
+        #{
+        #    _birthPlace = birthPlace;
+        #    return _birthPlace;
+        #}
+      ENDSOURCE
+      SOURCE #parmCreatedBy
+        #[ DataMemberAttribute('CreatedBy')]
+        #public CreatedBy parmCreatedBy(CreatedBy createdBy = _createdBy)
+        #{
+        #    _createdBy = createdBy;
+        #    return _createdBy;
+        #}
+      ENDSOURCE
+      SOURCE #parmCreatedDateTime
+        #[ DataMemberAttribute('CreatedDateTime')]
+        #public CreatedDateTime parmCreatedDateTime(CreatedDateTime createdDateTime = _createdDateTime)
+        #{
+        #    _createdDateTime = CreatedDateTime;
+        #    return _createdDateTime;
+        #}
+      ENDSOURCE
+      SOURCE #parmDataAreaId
+        #[ DataMemberAttribute('DataAreaId')]
+        #public DataAreaId parmDataAreaId(DataAreaId dataAreaId = _dataAreaId)
+        #{
+        #    _dataAreaId = dataAreaId;
+        #    return _dataAreaId;
+        #}
+      ENDSOURCE
+      SOURCE #parmModifiedBy
+        #[ DataMemberAttribute('ModifiedBy')]
+        #public ModifiedBy parmModifiedBy(ModifiedBy modifiedBy = _modifiedBy)
+        #{
+        #    _modifiedBy = modifiedBy;
+        #    return _modifiedBy;
+        #}
+      ENDSOURCE
+      SOURCE #parmModifiedDateTime
+        #[ DataMemberAttribute('ModifiedDateTime')]
+        #public ModifiedDateTime parmModifiedDateTime(ModifiedDateTime modifiedDateTime = _modifiedDateTime)
+        #{
+        #    _modifiedDateTime = modifiedDateTime;
+        #    return _modifiedDateTime;
+        #}
+      ENDSOURCE
+      SOURCE #parmRecId
+        #[ DataMemberAttribute('RecId')]
+        #public RecId parmRecId(RecId recId = _recId)
+        #{
+        #    _recId = recId;
+        #    return _recId;
+        #}
+      ENDSOURCE
+    ENDMETHODS
+  ENDCLASS
+
+***Element: CLS
+
+; Microsoft Dynamics AX Class: CustDataContract unloaded
+; --------------------------------------------------------------------------------
+  CLSVERSION 1
+  
+  CLASS #CustDataContract
+    PROPERTIES
+      Name                #CustDataContract
+      Origin              #{CD86A46E-FC3E-4CD5-8BD9-0F1E3A468FAE}
+    ENDPROPERTIES
+    
+    METHODS
+      SOURCE #parmContactPerson
+        #[ DataMemberAttribute('ContactPerson')]
+        #public ContactPersonId parmContactPerson(ContactPersonId contactPersonId = _contactPersonId)
+        #{
+        #    _contactPersonId = contactPersonId;
+        #    return _contactPersonId;
+        #}
+      ENDSOURCE
+      SOURCE #parmCustGroup
+        #[ DataMemberAttribute('CustGroup')]
+        #public CustGroupId parmCustGroup(CustGroupId custGroup = _custGroup)
+        #{
+        #    _custGroup = custGroup;
+        #    return _custGroup;
+        #}
+      ENDSOURCE
+      SOURCE #parmTaxGroup
+        #[ DataMemberAttribute('TaxGroup')]
+        #public TaxGroup parmTaxGroup(TaxGroup taxGroup = _taxGroup)
+        #{
+        #    _taxGroup = taxGroup;
+        #    return _taxGroup;
+        #}
+      ENDSOURCE
+      SOURCE #parmBusinessType
+        #[ DataMemberAttribute('BusinessType')]
+        #public BusinessType parmBusinessType(BusinessType businessType = _businessType)
+        #{
+        #    _businessType = businessType;
+        #    return _businessType;
+        #}
+      ENDSOURCE
+      SOURCE #parmEmail
+        #[ DataMemberAttribute('Email')]
+        #public Email parmEmail(Email email = _email)
+        #{
+        #    _email = email;
+        #    return _email;
+        #}
+      ENDSOURCE
+      SOURCE #parmPhone
+        #[ DataMemberAttribute('Phone')]
+        #public Phone parmPhone(Phone phone = _phone)
+        #{
+        #    _phone = phone;
+        #    return _phone;
+        #}
+      ENDSOURCE
+      SOURCE #parmCountry
+        #[ DataMemberAttribute('Country')]
+        #public LogisticsAddressCountryRegionName parmCountry(LogisticsAddressCountryRegionName countryName = _countryName)
+        #{
+        #    _countryName = countryName;
+        #    return _countryName;
+        #}
+      ENDSOURCE
+      SOURCE #parmCounty
+        #[ DataMemberAttribute('County')]
+        #public LogisticsAddressCountyName parmCounty(LogisticsAddressCountyName countyName = _countyName)
+        #{
+        #    _countyName = countyName;
+        #    return _countyName;
+        #}
+      ENDSOURCE
+      SOURCE #parmState
+        #[ DataMemberAttribute('State')]
+        #public AddressStatename parmState(AddressStatename stateName = _stateName)
+        #{
+        #    _stateName = stateName;
+        #    return _stateName;
+        #}
+      ENDSOURCE
+      SOURCE #parmCity
+        #[ DataMemberAttribute('City')]
+        #public LogisticsAddressCity parmCity(LogisticsAddressCity city = _city)
+        #{
+        #    _city = city;
+        #    return _city;
+        #}
+      ENDSOURCE
+      SOURCE #parmAddress
+        #[ DataMemberAttribute('Address')]
+        #public LogisticsAddressing parmAddress(LogisticsAddressing address = _address)
+        #{
+        #    _address = address;
+        #    return _address;
+        #}
+      ENDSOURCE
+      SOURCE #parmCustName
+        #[ DataMemberAttribute('CustName')]
+        #public CustName parmCustName(CustName custName = _custName)
+        #{
+        #    _custName = custName;
+        #    return _custName;
+        #}
+      ENDSOURCE
+      SOURCE #classDeclaration
+        #[DataContractAttribute]
+        #public class CustDataContract
+        #{
+        #    AccountNum              _accountNum;
+        #    CustAccountStatement    _accountStatement;
+        #    AgencyLocationCode      _agencyLocationCode;
+        #    BankAccount             _bankAccount;
+        #
+        #    CustName                _custName;
+        #    LogisticsAddressing     _address;
+        #    LogisticsAddressCity    _city;
+        #    AddressStatename        _stateName;
+        #    LogisticsAddressCountyName      _countyName;
+        #    LogisticsAddressCountryRegionShortName      _countryName;
+        #    Phone                       _phone;
+        #    Email                       _email;
+        #    BusinessType                _businessType;
+        #    TaxGroup                    _taxGroup;
+        #    CustGroupId                 _custGroup;
+        #    ContactPersonId             _contactPersonId;
+        #
+        #    DataAreaId          _dataAreaId;
+        #    RecId               _recId;
+        #    CreatedBy           _createdBy;
+        #    CreatedDateTime     _createdDateTime;
+        #    ModifiedBy          _modifiedBy;
+        #    ModifiedDateTime    _modifiedDateTime;
+        #}
+      ENDSOURCE
+      SOURCE #parmAccountNum
+        #[ DataMemberAttribute('AccountNum')]
+        #public AccountNum parmAccountNum(AccountNum accountNum = _accountNum)
+        #{
+        #    _accountNum = accountNum;
+        #    return _accountNum;
+        #}
+      ENDSOURCE
+      SOURCE #parmAccountStatement
+        #[ DataMemberAttribute('CustAccountStatement')]
+        #public CustAccountStatement parmAccountStatement(CustAccountStatement accountStatement = _accountStatement)
+        #{
+        #    _accountStatement = accountStatement;
+        #    return _accountStatement;
+        #}
+      ENDSOURCE
+      SOURCE #parmAgencyLocationCode
+        #[ DataMemberAttribute('AgencyLocationCode')]
+        #public AgencyLocationCode parmAgencyLocationCode(AgencyLocationCode agencyLocationCode = _agencyLocationCode)
+        #{
+        #    _agencyLocationCode = agencyLocationCode;
+        #    return _agencyLocationCode;
+        #}
+      ENDSOURCE
+      SOURCE #parmBankAccount
+        #[ DataMemberAttribute('BankAccount')]
+        #public BankAccount parmBankAccount(BankAccount bankAccount = _bankAccount)
+        #{
+        #    _bankAccount = bankAccount;
+        #    return _bankAccount;
+        #}
+      ENDSOURCE
+      SOURCE #parmCreatedBy
+        #[ DataMemberAttribute('CreatedBy')]
+        #public CreatedBy parmCreatedBy(CreatedBy createdBy = _createdBy)
+        #{
+        #    _createdBy = createdBy;
+        #    return _createdBy;
+        #}
+      ENDSOURCE
+      SOURCE #parmCreatedDateTime
+        #[ DataMemberAttribute('CreatedDateTime')]
+        #public CreatedDateTime parmCreatedDateTime(CreatedDateTime createdDateTime = _createdDateTime)
+        #{
+        #    _createdDateTime = CreatedDateTime;
+        #    return _createdDateTime;
+        #}
+      ENDSOURCE
+      SOURCE #parmDataAreaId
+        #[ DataMemberAttribute('DataAreaId')]
+        #public DataAreaId parmDataAreaId(DataAreaId dataAreaId = _dataAreaId)
+        #{
+        #    _dataAreaId = dataAreaId;
+        #    return _dataAreaId;
+        #}
+      ENDSOURCE
+      SOURCE #parmModifiedBy
+        #[ DataMemberAttribute('ModifiedBy')]
+        #public ModifiedBy parmModifiedBy(ModifiedBy modifiedBy = _modifiedBy)
+        #{
+        #    _modifiedBy = modifiedBy;
+        #    return _modifiedBy;
+        #}
+      ENDSOURCE
+      SOURCE #parmModifiedDateTime
+        #[ DataMemberAttribute('ModifiedDateTime')]
+        #public ModifiedDateTime parmModifiedDateTime(ModifiedDateTime modifiedDateTime = _modifiedDateTime)
+        #{
+        #    _modifiedDateTime = modifiedDateTime;
+        #    return _modifiedDateTime;
+        #}
+      ENDSOURCE
+      SOURCE #parmRecId
+        #[ DataMemberAttribute('RecId')]
+        #public RecId parmRecId(RecId recId = _recId)
+        #{
+        #    _recId = recId;
+        #    return _recId;
+        #}
+      ENDSOURCE
+    ENDMETHODS
+  ENDCLASS
+
+***Element: CLS
+
+; Microsoft Dynamics AX Class: SalesDataContract unloaded
+; --------------------------------------------------------------------------------
+  CLSVERSION 1
+  
+  CLASS #SalesDataContract
+    PROPERTIES
+      Name                #SalesDataContract
+      Origin              #{E817C232-6A27-4EBE-B146-408DFB48B686}
+    ENDPROPERTIES
+    
+    METHODS
+      SOURCE #classDeclaration
+        #[DataContractAttribute]
+        #public class SalesDataContract
+        #{
+        #    SalesIdBase         _salesId;
+        #    SalesType           _salesType;
+        #    CommissSalesGroup   _salesGroup;
+        #    SalesName           _salesName;
+        #    SalesStatus         _salesStatus;
+        #
+        #    CustAccount         _custAccount;
+        #    ContactPersonName   _contactPersonName;     //editContactPersonName
+        #    CustName            _customerName;          //customerName
+        #    LogisticsDeliveryName   _deliveryName;
+        #    Name                    _shipCarrierDeliveryContact;
+        #    ContractLength          _contractLength;
+        #    //IsContractRolling       _isContractRolling;
+        #    //IsContractFreeOfCharge  _isContractFreeOfCharge;
+        #    DepositPaidOn           _depositPaidOn;
+        #    //DepositPaidInclVAT      _depositPaidVat;
+        #    //ContractPaymentOption   _contractPaymentOption;
+        #    //OneTimeCustomer         _oneTimeCustomer;
+        #
+        #    //SalesLine           _salesLines;
+        #
+        #    DataAreaId          _dataAreaId;
+        #    RecId               _recId;
+        #    CreatedBy           _createdBy;
+        #    CreatedDateTime     _createdDateTime;
+        #    ModifiedBy          _modifiedBy;
+        #    ModifiedDateTime    _modifiedDateTime;
+        #}
+      ENDSOURCE
+      SOURCE #parmContactPersonName
+        #[ DataMemberAttribute('ContactPersonName')]
+        #public ContactPersonName parmContactPersonName(ContactPersonName contactPersonName = _contactPersonName)
+        #{
+        #    _contactPersonName = contactPersonName;
+        #    return _contactPersonName;
+        #}
+      ENDSOURCE
+      SOURCE #parmContractLength
+        #[ DataMemberAttribute('ContractLength')]
+        #public ContractLength parmContractLength(ContractLength contractLength = _contractLength)
+        #{
+        #    _contractLength = contractLength;
+        #    return _contractLength;
+        #}
+      ENDSOURCE
+      SOURCE #parmCreatedBy
+        #[ DataMemberAttribute('CreatedBy')]
+        #public CreatedBy parmCreatedBy(CreatedBy createdBy = _createdBy)
+        #{
+        #    _createdBy = createdBy;
+        #    return _createdBy;
+        #}
+      ENDSOURCE
+      SOURCE #parmCreatedDateTime
+        #[ DataMemberAttribute('CreatedDateTime')]
+        #public CreatedDateTime parmCreatedDateTime(CreatedDateTime createdDateTime = _createdDateTime)
+        #{
+        #    _createdDateTime = CreatedDateTime;
+        #    return _createdDateTime;
+        #}
+      ENDSOURCE
+      SOURCE #parmCustAccount
+        #[ DataMemberAttribute('CustAccount')]
+        #public CustAccount parmCustAccount(CustAccount custAccount = _custAccount)
+        #{
+        #    _custAccount = custAccount;
+        #    return _custAccount;
+        #}
+      ENDSOURCE
+      SOURCE #parmCustName
+        #[ DataMemberAttribute('CustomerName')]
+        #public CustName parmCustName(CustName custName = _customerName)
+        #{
+        #    _customerName = custName;
+        #    return _customerName;
+        #}
+      ENDSOURCE
+      SOURCE #parmDataAreaId
+        #[ DataMemberAttribute('DataAreaId')]
+        #public DataAreaId parmDataAreaId(DataAreaId dataAreaId = _dataAreaId)
+        #{
+        #    _dataAreaId = dataAreaId;
+        #    return _dataAreaId;
+        #}
+      ENDSOURCE
+      SOURCE #parmDeliveryName
+        #[ DataMemberAttribute('LogisticsDeliveryName')]
+        #public LogisticsDeliveryName parmDeliveryName(LogisticsDeliveryName deliveryName = _deliveryName)
+        #{
+        #    _deliveryName = deliveryName;
+        #    return _deliveryName;
+        #}
+      ENDSOURCE
+      SOURCE #parmDepositPaidOn
+        #[ DataMemberAttribute('DepositPaidOn')]
+        #public DepositPaidOn parmDepositPaidOn(DepositPaidOn depositPaidOn = _depositPaidOn)
+        #{
+        #    _depositPaidOn = depositPaidOn;
+        #    return _depositPaidOn;
+        #}
+      ENDSOURCE
+      SOURCE #parmModifiedBy
+        #[ DataMemberAttribute('ModifiedBy')]
+        #public ModifiedBy parmModifiedBy(ModifiedBy modifiedBy = _modifiedBy)
+        #{
+        #    _modifiedBy = modifiedBy;
+        #    return _modifiedBy;
+        #}
+      ENDSOURCE
+      SOURCE #parmModifiedDateTime
+        #[ DataMemberAttribute('ModifiedDateTime')]
+        #public ModifiedDateTime parmModifiedDateTime(ModifiedDateTime modifiedDateTime = _modifiedDateTime)
+        #{
+        #    _modifiedDateTime = modifiedDateTime;
+        #    return _modifiedDateTime;
+        #}
+      ENDSOURCE
+      SOURCE #parmRecId
+        #[ DataMemberAttribute('RecId')]
+        #public RecId parmRecId(RecId recId = _recId)
+        #{
+        #    _recId = recId;
+        #    return _recId;
+        #}
+      ENDSOURCE
+      SOURCE #parmSalesGroup
+        #[ DataMemberAttribute('SalesGroup')]
+        #public CommissSalesGroup parmSalesGroup(CommissSalesGroup salesGroup = _salesGroup)
+        #{
+        #    _salesGroup = salesGroup;
+        #    return _salesGroup;
+        #}
+      ENDSOURCE
+      SOURCE #parmSalesId
+        #[ DataMemberAttribute('SalesId')]
+        #public SalesIdBase parmSalesId(SalesIdBase salesId = _salesId)
+        #{
+        #    _salesId = salesId;
+        #    return _salesId;
+        #}
+      ENDSOURCE
+      SOURCE #parmSalesName
+        #[ DataMemberAttribute('SalesName')]
+        #public SalesName parmSalesName(SalesName salesName = _salesName)
+        #{
+        #    _salesName = salesName;
+        #    return _salesName;
+        #}
+      ENDSOURCE
+      SOURCE #parmSalesStatus
+        #[ DataMemberAttribute('SalesStatus')]
+        #public SalesStatus parmSalesStatus(SalesStatus salesStatus = _salesStatus)
+        #{
+        #    _salesStatus = salesStatus;
+        #    return _salesStatus;
+        #}
+      ENDSOURCE
+      SOURCE #parmSalesType
+        #[ DataMemberAttribute('SalesType')]
+        #public SalesType parmSalesType(SalesType salesType = _salesType)
+        #{
+        #    _salesType = salesType;
+        #    return _salesType;
+        #}
+      ENDSOURCE
+      SOURCE #parmShipCarrierDeliveryContact
+        #[ DataMemberAttribute('ShipCarrierDeliveryContact')]
+        #public Name parmShipCarrierDeliveryContact(Name shipCarrierDeliveryContact = _shipCarrierDeliveryContact)
+        #{
+        #    _shipCarrierDeliveryContact = shipCarrierDeliveryContact;
+        #    return _shipCarrierDeliveryContact;
+        #}
+      ENDSOURCE
+    ENDMETHODS
+  ENDCLASS
+
+***Element: CLS
+
+; Microsoft Dynamics AX Class: SalesClientServiceContract unloaded
+; --------------------------------------------------------------------------------
+  CLSVERSION 1
+  
+  CLASS #SalesClientServiceContract
+    PROPERTIES
+      Name                #SalesClientServiceContract
+      Origin              #{554DB3CF-6B84-42DF-A27B-4B41B387489F}
+    ENDPROPERTIES
+    
+    METHODS
+      SOURCE #getUsers
+        #[SysEntryPointAttribute(true),
+        #AifCollectionTypeAttribute('return', Types::Class, classStr(UserDataContract))]
+        #
+        #public list getUsers()
+        #{
+        #    UserDataContract userDataContract;
+        #    List _userList = new List(Types::Class);
+        #    CnAppUserInfo  userInfo;
+        #
+        #    int counter = 0;
+        #
+        #    while select * from userInfo
+        #    {
+        #        userDataContract = new UserDataContract();
+        #
+        #        userDataContract.parmCreatedBy(userInfo.createdBy);
+        #        userDataContract.parmModifiedBy(userInfo.modifiedBy);
+        #        userDataContract.parmCreatedDateTime(userInfo.createdDateTime);
+        #        userDataContract.parmModifiedDateTime(userInfo.modifiedDateTime);
+        #        userDataContract.parmRecId(userInfo.RecId);
+        #        userDataContract.parmDataAreaId(userInfo.dataAreaId);
+        #
+        #        userDataContract.parmIsActive(userInfo.Active);
+        #        userDataContract.parmUserId(userInfo.CnUserId);
+        #        userDataContract.parmEmployeeId(userInfo.EmployeeId);
+        #        userDataContract.parmEmployeeName(userInfo.EmployeeName);
+        #        userDataContract.parmPassword(userInfo.Password);
+        #
+        #        _userList.addEnd(userDataContract);
+        #
+        #        counter++;
+        #
+        #        if(counter > 200){
+        #            break;
+        #        }
+        #    }
+        #    return _userList;
+        #}
+      ENDSOURCE
+      SOURCE #classDeclaration
+        #public class SalesClientServiceContract
+        #{
+        #}
+      ENDSOURCE
+      SOURCE #getCompanies
+        #[SysEntryPointAttribute(true),
+        #AifCollectionTypeAttribute('return', Types::Class, classStr(CompanyInfoDataContract))]
+        #
+        #public list getCompanies()
+        #{
+        #    CompanyInfoDataContract companyDataContract;
+        #    List _companyList = new List(Types::Class);
+        #    CompanyInfo  companyInfo;
+        #
+        #    while select * from companyInfo
+        #    {
+        #        companyDataContract = new CompanyInfoDataContract();
+        #
+        #        companyDataContract.parmCreatedBy(companyInfo.createdBy);
+        #        companyDataContract.parmModifiedBy(companyInfo.modifiedBy);
+        #        companyDataContract.parmCreatedDateTime(companyInfo.createdDateTime);
+        #        companyDataContract.parmModifiedDateTime(companyInfo.modifiedDateTime);
+        #        companyDataContract.parmRecId(companyInfo.RecId);
+        #        companyDataContract.parmDataAreaId(companyInfo.dataAreaId);
+        #
+        #        companyDataContract.parmDataArea(companyInfo.DataArea);
+        #        companyDataContract.parmName(companyInfo.Name);
+        #        companyDataContract.parmNameAlias(companyInfo.NameAlias);
+        #
+        #        _companyList.addEnd(companyDataContract);
+        #    }
+        #    return _companyList;
+        #}
+      ENDSOURCE
+      SOURCE #getCustomers
+        #[SysEntryPointAttribute(true),
+        #AifCollectionTypeAttribute('return', Types::Class, classStr(CustDataContract))]
+        #
+        #public list getCustomers()
+        #{
+        #    CustDataContract custDataContract;
+        #    List _custList = new List(Types::Class);
+        #    CustTable  custTable;
+        #
+        #    int counter = 0;
+        #
+        #    while select * from custTable
+        #    {
+        #        custDataContract = new CustDataContract();
+        #
+        #        custDataContract.parmCreatedBy(custTable.createdBy);
+        #        custDataContract.parmModifiedBy(custTable.modifiedBy);
+        #        custDataContract.parmCreatedDateTime(custTable.createdDateTime);
+        #        custDataContract.parmModifiedDateTime(custTable.modifiedDateTime);
+        #        custDataContract.parmRecId(custTable.RecId);
+        #        custDataContract.parmDataAreaId(custTable.dataAreaId);
+        #
+        #        custDataContract.parmBankAccount(custTable.BankAccount);
+        #        custDataContract.parmAgencyLocationCode(custTable.AgencyLocationCode);
+        #        custDataContract.parmAccountStatement(custTable.AccountStatement);
+        #        custDataContract.parmAccountNum(custTable.AccountNum);
+        #
+        #        custDataContract.parmCustName(custTable.name());
+        #        custDataContract.parmAddress(custTable.address());
+        #        custDataContract.parmCity(custTable.cityName_BR());
+        #        custDataContract.parmState(custTable.stateName());
+        #        custDataContract.parmCounty(custTable.countyName());
+        #        custDataContract.parmCountry(custTable.countryName());
+        #        custDataContract.parmPhone(custTable.phone());
+        #        custDataContract.parmEmail(custTable.email());
+        #        custDataContract.parmBusinessType(custTable.BusinessType);
+        #        custDataContract.parmTaxGroup(custTable.taxGroupName());
+        #        custDataContract.parmCustGroup(custTable.CustGroup);
+        #        custDataContract.parmContactPerson(custTable.ContactPersonId);
+        #
+        #        _custList.addEnd(custDataContract);
+        #
+        #        counter++;
+        #
+        #        if(counter > 200){
+        #            break;
+        #        }
+        #    }
+        #    return _custList;
+        #}
+      ENDSOURCE
+      SOURCE #getSales
+        #[SysEntryPointAttribute(true),
+        #AifCollectionTypeAttribute('return', Types::Class, classStr(SalesDataContract))]
+        #
+        #public list getSales()
+        #{
+        #    SalesDataContract salesDataContract;
+        #    List _salesList = new List(Types::Class);
+        #    SalesTable  salesTable;
+        #
+        #    int counter = 0;
+        #
+        #    while select * from salesTable
+        #    {
+        #        salesDataContract = new SalesDataContract();
+        #
+        #        salesDataContract.parmCreatedBy(salesTable.createdBy);
+        #        salesDataContract.parmModifiedBy(salesTable.modifiedBy);
+        #        salesDataContract.parmCreatedDateTime(salesTable.createdDateTime);
+        #        salesDataContract.parmModifiedDateTime(salesTable.modifiedDateTime);
+        #        salesDataContract.parmRecId(salesTable.RecId);
+        #        salesDataContract.parmDataAreaId(salesTable.dataAreaId);
+        #
+        #        salesDataContract.parmSalesStatus(salesTable.SalesStatus);
+        #        salesDataContract.parmSalesName(salesTable.SalesName);
+        #        salesDataContract.parmSalesGroup(salesTable.SalesGroup);
+        #        salesDataContract.parmSalesType(salesTable.SalesType);
+        #        salesDataContract.parmSalesId(salesTable.SalesId);
+        #
+        #        salesDataContract.parmCustAccount(salesTable.CustAccount);
+        #        //salesDataContract.parmContactPersonName(salesTable.editContactPersonName());
+        #        salesDataContract.parmCustName(salesTable.customerName());
+        #        salesDataContract.parmDeliveryName(salesTable.DeliveryName);
+        #        salesDataContract.parmShipCarrierDeliveryContact(salesTable.ShipCarrierDeliveryContact);
+        #        salesDataContract.parmContractLength(salesTable.ContractLength);
+        #        //salesDataContract.parmIsContractRolling(salesTable.IsContractRolling);
+        #        //salesDataContract.parmIsContractFreeOfCharge(salesTable.IsContractFreeOfCharge);
+        #        salesDataContract.parmDepositPaidOn(salesTable.DepositPaidOn);
+        #        //salesDataContract.parmDepositPaidInclVAT(salesTable.DepositPaidInclVAT);
+        #        //salesDataContract.parmContractPaymentOption(salesTable.ContractPaymentOption);
+        #        //salesDataContract.parmOneTimeCustomer(salesTable.OneTimeCustomer);
+        #
+        #        _salesList.addEnd(salesDataContract);
+        #
+        #        counter++;
+        #
+        #        if(counter > 200){
+        #            break;
+        #        }
+        #    }
+        #    return _salesList;
+        #}
+      ENDSOURCE
+      SOURCE #getVendors
+        #[SysEntryPointAttribute(true),
+        #AifCollectionTypeAttribute('return', Types::Class, classStr(VendDataContract))]
+        #
+        #public list getVendors()
+        #{
+        #    VendDataContract vendDataContract;
+        #    List _vendList = new List(Types::Class);
+        #    VendTable  vendTable;
+        #
+        #    int counter = 0;
+        #
+        #    while select * from vendTable
+        #    {
+        #        vendDataContract = new VendDataContract();
+        #
+        #        vendDataContract.parmCreatedBy(vendTable.createdBy);
+        #        vendDataContract.parmModifiedBy(vendTable.modifiedBy);
+        #        vendDataContract.parmCreatedDateTime(vendTable.createdDateTime);
+        #        vendDataContract.parmModifiedDateTime(vendTable.modifiedDateTime);
+        #        vendDataContract.parmRecId(vendTable.RecId);
+        #        vendDataContract.parmDataAreaId(vendTable.dataAreaId);
+        #
+        #        vendDataContract.parmVendName(vendTable.name());
+        #        vendDataContract.parmStreet(vendTable.streetName_BR());
+        #        vendDataContract.parmStreetNumber(vendTable.streetNumber_BR());
+        #        vendDataContract.parmCity(vendTable.cityName_BR());
+        #        vendDataContract.parmState(vendTable.stateName());
+        #        vendDataContract.parmCounty(vendTable.countyName());
+        #        vendDataContract.parmCountry(vendTable.countryRegionName());
+        #        vendDataContract.parmPhone(vendTable.phone());
+        #        vendDataContract.parmPhoneLocal(vendTable.phoneLocal());
+        #        vendDataContract.parmEmail(vendTable.email());
+        #        vendDataContract.parmContactPersonName(vendTable.contactPersonName());
+        #        vendDataContract.parmBusinessType(vendTable.BusinessType);
+        #
+        #        vendDataContract.parmBirthPlace(vendTable.BirthPlace);
+        #        vendDataContract.parmBankAccount(vendTable.BankAccount);
+        #        vendDataContract.parmAccountNum(vendTable.AccountNum);
+        #
+        #        _vendList.addEnd(vendDataContract);
+        #
+        #        counter++;
+        #
+        #        if(counter > 200){
+        #            break;
+        #        }
+        #    }
+        #    return _vendList;
+        #}
+      ENDSOURCE
+    ENDMETHODS
+  ENDCLASS
+
+***Element: SVC
+
+; Microsoft Dynamics AX SERVICE : SalesClientService unloaded
+; --------------------------------------------------------------------------------
+  VERSION 1
+  
+  SERVICE #SalesClientService
+    PROPERTIES
+      Name                #SalesClientService
+      ExternalName        #SalesClientService
+      Class               #SalesClientServiceContract
+      Origin              #{3DA03C77-5523-4FCB-BC56-35F587869153}
+    ENDPROPERTIES
+    
+    OPERATIONS
+      OPERATION #getCompanies
+        PROPERTIES
+          Name                #getCompanies
+          Method              #getCompanies
+        ENDPROPERTIES
+        
+        PERMISSIONSET #Permissions
+          PROPERTIES
+          ENDPROPERTIES
+          
+          TABLES #Tables
+          ENDTABLES
+          
+        SERVERMETHODS #Server Methods
+        ENDSERVERMETHODS
+        
+      ASSOCIATEDCODEPERMISSIONS #Associated Code Permissions
+      ENDASSOCIATEDCODEPERMISSIONS
+      
+  ENDPERMISSIONSET
+  
+ENDOPERATION
+
+OPERATION #getCustomers
+  PROPERTIES
+    Name                #getCustomers
+    Method              #getCustomers
+  ENDPROPERTIES
+  
+  PERMISSIONSET #Permissions
+    PROPERTIES
+    ENDPROPERTIES
+    
+    TABLES #Tables
+    ENDTABLES
+    
+  SERVERMETHODS #Server Methods
+  ENDSERVERMETHODS
+  
+ASSOCIATEDCODEPERMISSIONS #Associated Code Permissions
+ENDASSOCIATEDCODEPERMISSIONS
+
+ENDPERMISSIONSET
+
+ENDOPERATION
+
+OPERATION #getSales
+  PROPERTIES
+    Name                #getSales
+    Method              #getSales
+  ENDPROPERTIES
+  
+  PERMISSIONSET #Permissions
+    PROPERTIES
+    ENDPROPERTIES
+    
+    TABLES #Tables
+    ENDTABLES
+    
+  SERVERMETHODS #Server Methods
+  ENDSERVERMETHODS
+  
+ASSOCIATEDCODEPERMISSIONS #Associated Code Permissions
+ENDASSOCIATEDCODEPERMISSIONS
+
+ENDPERMISSIONSET
+
+ENDOPERATION
+
+OPERATION #getVendors
+  PROPERTIES
+    Name                #getVendors
+    Method              #getVendors
+  ENDPROPERTIES
+  
+  PERMISSIONSET #Permissions
+    PROPERTIES
+    ENDPROPERTIES
+    
+    TABLES #Tables
+    ENDTABLES
+    
+  SERVERMETHODS #Server Methods
+  ENDSERVERMETHODS
+  
+ASSOCIATEDCODEPERMISSIONS #Associated Code Permissions
+ENDASSOCIATEDCODEPERMISSIONS
+
+ENDPERMISSIONSET
+
+ENDOPERATION
+
+OPERATION #getUsers
+  PROPERTIES
+    Name                #getUsers
+    Method              #getUsers
+  ENDPROPERTIES
+  
+  PERMISSIONSET #Permissions
+    PROPERTIES
+    ENDPROPERTIES
+    
+    TABLES #Tables
+    ENDTABLES
+    
+  SERVERMETHODS #Server Methods
+  ENDSERVERMETHODS
+  
+ASSOCIATEDCODEPERMISSIONS #Associated Code Permissions
+ENDASSOCIATEDCODEPERMISSIONS
+
+ENDPERMISSIONSET
+
+ENDOPERATION
+
+ENDOPERATIONS
+
+ENDSERVICE
+
+
+***Element: SVG
+
+; Microsoft Dynamics AX SERVICEGROUP : SalesClientServiceGroup unloaded
+; --------------------------------------------------------------------------------
+  VERSION 1
+  
+  SERVICEGROUP #SalesClientServiceGroup
+    PROPERTIES
+      Name                #SalesClientServiceGroup
+      Origin              #{7AD313E5-A266-49EC-AB4A-14F92861D6EB}
+    ENDPROPERTIES
+    
+    SERVICENODEREFERENCE #SalesClientService
+      PROPERTIES
+        Name                #SalesClientService
+        Service             #SalesClientService
+      ENDPROPERTIES
+      
+    ENDSERVICENODEREFERENCE
+    
+ENDSERVICEGROUP
+
+
+***Element: JOB
+
+; Microsoft Dynamics AX Job: Job55 unloaded
+; --------------------------------------------------------------------------------
+  JOBVERSION 1
+  
+  SOURCE #Job55
+    #static void Job55(Args _args)
+    #{
+    #    SalesLine       _salesLine;
+    #
+    #    select * from _salesLine where _salesLine.SalesId == 'SOM00000105';
+    #
+    #    while(_salesLine){
+    #        info(strfmt("Info %1", _salesLine.SalesId));
+    #        next _salesLine;
+    #    }
+    #}
+  ENDSOURCE
+  PROPERTIES
+    Origin              #{67FE82DA-5436-4FE7-9C12-3B801022E3AB}
+  ENDPROPERTIES
+  
+
+***Element: PRN
+
+; Microsoft Dynamics AX Project : SalesClient_ByFirdous unloaded
+; --------------------------------------------------------------------------------
+  PROJECTVERSION 2
+  
+  PROJECT #SalesClient_ByFirdous
+  PRIVATE
+  PROPERTIES
+    Name                #SalesClient_ByFirdous
+    Origin              #{DE0CC032-D2E1-44B2-9D98-826837C52EA4}
+  ENDPROPERTIES
+  
+    PROJECTCLASS ProjectNode
+    GROUP #Classes
+      PROPERTIES
+        Name                #Classes
+        ProjectGroupType    #Classes
+        GroupMask           #
+        PreventEditProperties #No
+      ENDPROPERTIES
+      
+      BEGINNODE
+        FILETYPE 0
+        UTILTYPE 45
+        UTILOBJECTID 1025584
+        NODETYPE 329
+        NAME #UserDataContract
+      ENDNODE
+      BEGINNODE
+        FILETYPE 0
+        UTILTYPE 45
+        UTILOBJECTID 1025583
+        NODETYPE 329
+        NAME #CompanyInfoDataContract
+      ENDNODE
+      BEGINNODE
+        FILETYPE 0
+        UTILTYPE 45
+        UTILOBJECTID 1025582
+        NODETYPE 329
+        NAME #VendDataContract
+      ENDNODE
+      BEGINNODE
+        FILETYPE 0
+        UTILTYPE 45
+        UTILOBJECTID 1025581
+        NODETYPE 329
+        NAME #CustDataContract
+      ENDNODE
+      BEGINNODE
+        FILETYPE 0
+        UTILTYPE 45
+        UTILOBJECTID 1025580
+        NODETYPE 329
+        NAME #SalesDataContract
+      ENDNODE
+      BEGINNODE
+        FILETYPE 0
+        UTILTYPE 45
+        UTILOBJECTID 1025579
+        NODETYPE 329
+        NAME #SalesClientServiceContract
+      ENDNODE
+      ENDGROUP
+      
+    GROUP #Services
+      PROPERTIES
+        Name                #Services
+        ProjectGroupType    #Services
+        GroupMask           #
+        PreventEditProperties #No
+      ENDPROPERTIES
+      
+      BEGINNODE
+        FILETYPE 0
+        UTILTYPE 76
+        UTILOBJECTID 0
+        NODETYPE 1321
+        NAME #SalesClientService
+      ENDNODE
+      ENDGROUP
+      
+    GROUP #Service Groups
+      PROPERTIES
+        Name                #Service Groups
+        ProjectGroupType    #ServiceGroups
+        GroupMask           #
+        PreventEditProperties #No
+      ENDPROPERTIES
+      
+      BEGINNODE
+        FILETYPE 0
+        UTILTYPE 137
+        UTILOBJECTID 0
+        NODETYPE 1325
+        NAME #SalesClientServiceGroup
+      ENDNODE
+      ENDGROUP
+      
+    BEGINNODE
+      FILETYPE 0
+      UTILTYPE 5
+      UTILOBJECTID 0
+      NODETYPE 215
+      NAME #Job55
+    ENDNODE
+  ENDPROJECT
+  
+
+***Element: END

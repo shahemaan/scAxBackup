@@ -1,0 +1,291 @@
+﻿Exportfile for AOT version 1.0 or later
+Formatversion: 1
+
+***Element: SVG
+
+; Microsoft Dynamics AX SERVICEGROUP : CustomEntityServiceGroup unloaded
+; --------------------------------------------------------------------------------
+  VERSION 1
+  
+  SERVICEGROUP #CustomEntityServiceGroup
+    PROPERTIES
+      Name                #CustomEntityServiceGroup
+      Origin              #{64D2A5BA-C79D-4CF8-A47D-6067BA156732}
+    ENDPROPERTIES
+    
+    SERVICENODEREFERENCE #EntityService
+      PROPERTIES
+        Name                #EntityService
+        Service             #EntityService
+      ENDPROPERTIES
+      
+    ENDSERVICENODEREFERENCE
+    
+ENDSERVICEGROUP
+
+
+***Element: SVC
+
+; Microsoft Dynamics AX SERVICE : EntityService unloaded
+; --------------------------------------------------------------------------------
+  VERSION 1
+  
+  SERVICE #EntityService
+    PROPERTIES
+      Name                #EntityService
+      ExternalName        #EntityService
+      Namespace           #http://schemas.microsoft.com/dynamics/2008/01/services
+      Class               #CustomEntityServiceContract
+      Origin              #{FF9EA566-268C-4A22-BC26-A7AA01ABDC8F}
+    ENDPROPERTIES
+    
+    OPERATIONS
+      OPERATION #GetEntityList
+        PROPERTIES
+          Name                #GetEntityList
+          Method              #GetEntityList
+        ENDPROPERTIES
+        
+        PERMISSIONSET #Permissions
+          PROPERTIES
+          ENDPROPERTIES
+          
+          TABLES #Tables
+          ENDTABLES
+          
+        SERVERMETHODS #Server Methods
+        ENDSERVERMETHODS
+        
+      ASSOCIATEDCODEPERMISSIONS #Associated Code Permissions
+      ENDASSOCIATEDCODEPERMISSIONS
+      
+  ENDPERMISSIONSET
+  
+ENDOPERATION
+
+OPERATION #InsertEntity
+  PROPERTIES
+    Name                #InsertEntity
+    Method              #InsertEntity
+  ENDPROPERTIES
+  
+  PERMISSIONSET #Permissions
+    PROPERTIES
+    ENDPROPERTIES
+    
+    TABLES #Tables
+    ENDTABLES
+    
+  SERVERMETHODS #Server Methods
+  ENDSERVERMETHODS
+  
+ASSOCIATEDCODEPERMISSIONS #Associated Code Permissions
+ENDASSOCIATEDCODEPERMISSIONS
+
+ENDPERMISSIONSET
+
+ENDOPERATION
+
+ENDOPERATIONS
+
+ENDSERVICE
+
+
+***Element: CLS
+
+; Microsoft Dynamics AX Class: CustomEntityServiceContract unloaded
+; --------------------------------------------------------------------------------
+  CLSVERSION 1
+  
+  CLASS #CustomEntityServiceContract
+    PROPERTIES
+      Name                #CustomEntityServiceContract
+      Origin              #{1DE59EA4-7D00-4B25-AEF4-B3B58FCE6DD5}
+    ENDPROPERTIES
+    
+    METHODS
+      SOURCE #classDeclaration
+        #public class CustomEntityServiceContract
+        #{
+        #}
+      ENDSOURCE
+      SOURCE #GetEntityList
+        #[SysEntryPointAttribute(true),
+        #AifCollectionTypeAttribute('return', Types::Class, classStr(CustomEntityDataContract))]
+        #
+        #public list GetEntityList()
+        #{
+        #    CustomEntityDataContract entityObj;
+        #    List _entityList = new List(Types::Class);
+        #    CustomEntityTable  entitybuff;
+        #
+        #    while select * from entitybuff
+        #    {
+        #        entityObj = new CustomEntityDataContract();
+        #        entityObj.parmEntityName(entitybuff.EntityName);
+        #        _entityList.addEnd(entityObj);
+        #    }
+        #    return _entityList;
+        #}
+      ENDSOURCE
+      SOURCE #InsertEntity
+        #[SysEntryPointAttribute(true),
+        #AifCollectionTypeAttribute('entityObj', Types::Class)]
+        #
+        #public void InsertEntity(CustomEntityDataContract entityObj)
+        #{
+        #    CustomEntityTable _entityTable;
+        #    Name _name;
+        #
+        #    _name = entityObj.parmEntityName();
+        #
+        #    select * from _entityTable where _entityTable.EntityName == _name;
+        #
+        #    if (_entityTable==null)
+        #    {
+        #        try
+        #        {
+        #            ttsBegin;
+        #            _entityTable.EntityName = _name;
+        #            _entityTable.insert();
+        #            ttsCommit;
+        #        }
+        #        catch
+        #        {
+        #            ttsAbort;
+        #        }
+        #    }
+        #}
+      ENDSOURCE
+    ENDMETHODS
+  ENDCLASS
+
+***Element: CLS
+
+; Microsoft Dynamics AX Class: CustomEntityDataContract unloaded
+; --------------------------------------------------------------------------------
+  CLSVERSION 1
+  
+  CLASS #CustomEntityDataContract
+    PROPERTIES
+      Name                #CustomEntityDataContract
+      Origin              #{4C190F2E-0DD2-4AC6-885A-A1A9729327D4}
+    ENDPROPERTIES
+    
+    METHODS
+      SOURCE #classDeclaration
+        #[DataContractAttribute]
+        #public class CustomEntityDataContract
+        #{
+        #    Name EntityName;
+        #}
+      ENDSOURCE
+      SOURCE #parmEntityName
+        #[ DataMemberAttribute('EntityName')]
+        #
+        #public Name parmEntityName(Name _EntityName = EntityName)
+        #{
+        #    EntityName = _EntityName;
+        #    return EntityName;
+        #}
+      ENDSOURCE
+    ENDMETHODS
+  ENDCLASS
+
+***Element: DBT
+
+; Microsoft Dynamics AX Table : CustomEntityTable unloaded
+; --------------------------------------------------------------------------------
+  TABLEVERSION 1
+  
+  TABLE #CustomEntityTable
+    EnforceFKRelation 1
+    PROPERTIES
+      Name                #CustomEntityTable
+      CreateRecIdIndex    #Yes
+      PrimaryIndex        #SurrogateKey
+      ClusterIndex        #SurrogateKey
+      Origin              #{1DCFC2BF-FDF1-44E3-8CB3-7480B3D5BF5B}
+    ENDPROPERTIES
+    
+    FIELDS
+      FIELD #EntityName
+        STRING
+        PROPERTIES
+          Name                #EntityName
+          Table               #CustomEntityTable
+          Origin              #{6B8C1AB9-72E3-4743-B98B-27BB52AD99F5}
+        ENDPROPERTIES
+        
+    ENDFIELDS
+    GROUPS
+    ENDGROUPS
+    
+    INDICES
+    ENDINDICES
+    FULLTEXTINDICES
+    ENDFULLTEXTINDICES
+    REFERENCES
+    ENDREFERENCES
+    
+    DELETEACTIONS
+    ENDDELETEACTIONS
+    
+    METHODS
+    ENDMETHODS
+  ENDTABLE
+  
+
+***Element: PRN
+
+; Microsoft Dynamics AX Project : FirdousProject unloaded
+; --------------------------------------------------------------------------------
+  PROJECTVERSION 2
+  
+  PROJECT #FirdousProject
+  PRIVATE
+  PROPERTIES
+    Name                #FirdousProject
+    Origin              #{B98B29CF-16F7-4763-B1D4-B539437A53A9}
+  ENDPROPERTIES
+  
+    PROJECTCLASS ProjectNode
+    BEGINNODE
+      FILETYPE 0
+      UTILTYPE 137
+      UTILOBJECTID 0
+      NODETYPE 1325
+      NAME #CustomEntityServiceGroup
+    ENDNODE
+    BEGINNODE
+      FILETYPE 0
+      UTILTYPE 76
+      UTILOBJECTID 0
+      NODETYPE 1321
+      NAME #EntityService
+    ENDNODE
+    BEGINNODE
+      FILETYPE 0
+      UTILTYPE 45
+      UTILOBJECTID 1025575
+      NODETYPE 329
+      NAME #CustomEntityServiceContract
+    ENDNODE
+    BEGINNODE
+      FILETYPE 0
+      UTILTYPE 45
+      UTILOBJECTID 1025574
+      NODETYPE 329
+      NAME #CustomEntityDataContract
+    ENDNODE
+    BEGINNODE
+      FILETYPE 0
+      UTILTYPE 44
+      UTILOBJECTID 103256
+      NODETYPE 204
+      NAME #CustomEntityTable
+    ENDNODE
+  ENDPROJECT
+  
+
+***Element: END
